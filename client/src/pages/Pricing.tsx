@@ -17,9 +17,9 @@ interface TaxRates {
 }
 
 const TAX_RATES: TaxRates = {
-  silver: 0.05,
-  gold: 0.03,
-  diamond: 0.02,
+  silver: 0.10,
+  gold: 0.12,
+  diamond: 0.13,
 };
 
 const MAX_BONUS = 0.05;
@@ -103,21 +103,21 @@ export default function Pricing() {
                       <RadioGroupItem value="silver" id="silver" />
                       <Label htmlFor="silver" className="cursor-pointer flex-1 font-medium">
                         Prata
-                        <span className="block text-sm text-muted-foreground font-normal">Taxa: 5%</span>
+                        <span className="block text-sm text-muted-foreground font-normal">Taxa: 10%</span>
                       </Label>
                     </div>
                     <div className="flex items-center space-x-3 p-3 rounded-lg hover:bg-muted dark:hover:bg-slate-800 transition-colors border border-yellow-400 dark:border-yellow-500">
                       <RadioGroupItem value="gold" id="gold" />
                       <Label htmlFor="gold" className="cursor-pointer flex-1 font-medium">
                         Ouro
-                        <span className="block text-sm text-muted-foreground font-normal">Taxa: 3%</span>
+                        <span className="block text-sm text-muted-foreground font-normal">Taxa: 12%</span>
                       </Label>
                     </div>
                     <div className="flex items-center space-x-3 p-3 rounded-lg hover:bg-muted dark:hover:bg-slate-800 transition-colors border border-transparent dark:border-slate-700">
                       <RadioGroupItem value="diamond" id="diamond" />
                       <Label htmlFor="diamond" className="cursor-pointer flex-1 font-medium">
                         Diamante
-                        <span className="block text-sm text-muted-foreground font-normal">Taxa: 2%</span>
+                        <span className="block text-sm text-muted-foreground font-normal">Taxa: 13%</span>
                       </Label>
                     </div>
                   </RadioGroup>
